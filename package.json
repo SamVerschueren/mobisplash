@@ -1,0 +1,51 @@
+{
+  "name": "mobisplash",
+  "version": "0.0.0",
+  "description": "Mobile app splash screen generator",
+  "license": "MIT",
+  "repository": "SamVerschueren/mobisplash",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "platforms.json"
+  ],
+  "keywords": [
+    "mobile",
+    "app",
+    "application",
+    "splash",
+    "screen",
+    "splashscreen",
+    "generator",
+    "mobisplash",
+    "cordova",
+    "android",
+    "ios",
+    "blackberry10",
+    "ninepatch",
+    "9patch"
+  ],
+  "dependencies": {
+    "gm": "^1.21.1",
+    "mkdirp": "^0.5.1",
+    "object-assign": "^4.0.1",
+    "pify": "^2.3.0",
+    "pinkie-promise": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "path-exists": "^2.1.0",
+    "tempfile": "^1.1.1",
+    "xo": "*"
+  }
+}

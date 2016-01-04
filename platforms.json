@@ -1,0 +1,162 @@
+{
+  "android": {
+    "portrait": [
+      {
+        "name": "drawable-ldpi-port/splash.png",
+        "width": 200,
+        "height": 320
+      },
+      {
+        "name": "drawable-mdpi-port/splash.png",
+        "width": 320,
+        "height": 480
+      },
+      {
+        "name": "drawable-hdpi-port/splash.png",
+        "width": 480,
+        "height": 800
+      },
+      {
+        "name": "drawable-xhdpi-port/splash.png",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "name": "drawable-xxhdpi-port/splash.png",
+        "width": 960,
+        "height": 1600
+      },
+      {
+        "name": "drawable-xxxhdpi-port/splash.png",
+        "width": 1920,
+        "height": 1280
+      }
+    ],
+    "landscape": [
+      {
+        "name": "drawable-ldpi-land/splash.png",
+        "width": 320,
+        "height": 200
+      },
+      {
+        "name": "drawable-mdpi-land/splash.png",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "name": "drawable-hdpi-land/splash.png",
+        "width": 800,
+        "height": 480
+      },
+      {
+        "name": "drawable-xhdpi-land/splash.png",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "name": "drawable-xxhdpi-land/splash.png",
+        "width": 1600,
+        "height": 960
+      },
+      {
+        "name": "drawable-xxxhdpi-land/splash.png",
+        "width": 1280,
+        "height": 1920
+      }
+    ]
+  },
+  "ios": {
+    "portrait": [
+      {
+        "name": "Default~iphone.png",
+        "width": 320,
+        "height": 480
+      },
+      {
+        "name": "Default@2x~iphone.png",
+        "width": 640,
+        "height": 960
+      },
+      {
+        "name": "Default-Portrait~ipad.png",
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "name": "Default-Portrait@2x~ipad.png",
+        "width": 1536,
+        "height": 2048
+      },
+      {
+        "name": "Default-568h@2x~iphone.png",
+        "width": 640,
+        "height": 1136
+      },
+      {
+        "name": "Default-667h.png",
+        "width": 750,
+        "height": 1334
+      },
+      {
+        "name": "Default-736h.png",
+        "width": 1242,
+        "height": 2208
+      }
+    ],
+    "landscape": [
+      {
+        "name": "Default-Landscape~ipad.png",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "name": "Default-Landscape@2x~ipad.png",
+        "width": 2048,
+        "height": 1536
+      },
+      {
+        "name": "Default-Landscape-736h.png",
+        "width": 2208,
+        "height": 1242
+      }
+    ]
+  },
+  "blackberry10": {
+    "square": [
+      {
+        "name": "splash-720x720.png",
+        "width": 720,
+        "height": 720
+      },
+      {
+        "name": "splash-1440x1440.png",
+        "width": 1440,
+        "height": 1440
+      }
+    ],
+    "portrait": [
+      {
+        "name": "splash-768x1280.png",
+        "width": 768,
+        "height": 1280
+      },
+      {
+        "name": "splash-720x1280.png",
+        "width": 720,
+        "height": 1280
+      }
+    ],
+    "landscape": [
+      {
+        "name": "splash-1280x768.png",
+        "width": 1280,
+        "height": 768
+      },
+      {
+        "name": "splash-1280x720.png",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}
