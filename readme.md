@@ -63,44 +63,44 @@ Source file of the splash screen.
 
 ##### platform
 
-*Required*
-Type: `string`
+*Required*  
+Type: `string`  
 Values: `android` `ios` `blackberry10`
 
 Platform to generate the splash screens for.
 
 ##### orientation
 
-Type: `string`
-Values: `both` `portrait` `landscape`
+Type: `string`  
+Values: `both` `portrait` `landscape`  
 Default: `both`
 
 Orientation to generate the splash screens for.
 
 ##### background
 
-Type: `string`
+Type: `string`  
 Default: `white`
 
 [Color](http://www.graphicsmagick.org/GraphicsMagick.html#details-fill) of the splash screen background.
 
 ##### contentRatio
 
-Type: `number`
+Type: `number`  
 Default: `0.8`
 
 Logo-splash screen ratio. `1` means the logo will fill up the entire width (or height) of the splash screen.
 
 ##### draw9patch
 
-Type: `boolean`
+Type: `boolean`  
 Default: `true`
 
 [9-patch](http://developer.android.com/tools/help/draw9patch.html) the `Android` splash screens.
 
 ##### dest
 
-Type: `string`
+Type: `string`  
 Default: `process.cwd()`
 
 Directory to save the generated splash screens to.
