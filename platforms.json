@@ -28,8 +28,8 @@
       },
       {
         "name": "drawable-xxxhdpi-port/splash.png",
-        "width": 1920,
-        "height": 1280
+        "width": 1280,
+        "height": 1920
       }
     ],
     "landscape": [
