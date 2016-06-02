@@ -10,14 +10,15 @@
     "url": "github.com/SamVerschueren"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
   },
   "files": [
     "index.js",
-    "platforms.json"
+    "platforms.json",
+    "lib"
   ],
   "keywords": [
     "mobile",
@@ -38,14 +39,15 @@
   "dependencies": {
     "gm": "^1.21.1",
     "mkdirp": "^0.5.1",
-    "object-assign": "^4.0.1",
-    "pify": "^2.3.0",
-    "pinkie-promise": "^2.0.0"
+    "pify": "^2.3.0"
   },
   "devDependencies": {
     "ava": "*",
-    "path-exists": "^2.1.0",
+    "path-exists": "^3.0.0",
     "tempfile": "^1.1.1",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }
