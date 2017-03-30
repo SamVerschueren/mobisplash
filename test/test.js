@@ -27,7 +27,7 @@ test('android', async t => {
 		'drawable-xxxhdpi-port/splash.png'
 	];
 
-	await fn('fixtures/icon.png', {platform: 'android', dest: t.context.tmp, draw9patch: false});
+	await fn('test/fixtures/icon.png', {platform: 'android', dest: t.context.tmp, draw9patch: false});
 
 	exists(t, [].concat(landscape, portrait));
 	await isLandscape(t, landscape);
@@ -51,7 +51,7 @@ test('ios', async t => {
 		'Default-Portrait@2x~ipad.png'
 	];
 
-	await fn('fixtures/icon.png', {platform: 'ios', dest: t.context.tmp});
+	await fn('test/fixtures/icon.png', {platform: 'ios', dest: t.context.tmp});
 
 	exists(t, [].concat(landscape, portrait));
 	await isLandscape(t, landscape);
@@ -74,7 +74,7 @@ test('bb10', async t => {
 		'splash-1440x1440.png'
 	];
 
-	await fn('fixtures/icon.png', {platform: 'blackberry10', dest: t.context.tmp});
+	await fn('test/fixtures/icon.png', {platform: 'blackberry10', dest: t.context.tmp});
 
 	exists(t, [].concat(landscape, portrait, square));
 	await isLandscape(t, landscape);
@@ -83,7 +83,7 @@ test('bb10', async t => {
 });
 
 test('portrait', async t => {
-	await fn('fixtures/icon.png', {platform: 'blackberry10', dest: t.context.tmp, orientation: 'portrait'});
+	await fn('test/fixtures/icon.png', {platform: 'blackberry10', dest: t.context.tmp, orientation: 'portrait'});
 
 	exists(t, [
 		'splash-720x1280.png',
@@ -99,7 +99,7 @@ test('portrait', async t => {
 });
 
 test('9patch', async t => {
-	await fn('fixtures/icon.svg', {platform: 'android', dest: t.context.tmp, orientation: 'portrait'});
+	await fn('test/fixtures/icon.svg', {platform: 'android', dest: t.context.tmp, orientation: 'portrait'});
 
 	exists(t, 'drawable-ldpi-port/splash.9.png');
 	notExists(t, 'drawable-ldpi-port/splash.png');
@@ -110,7 +110,7 @@ test('9patch', async t => {
 });
 
 test('no 9patch', async t => {
-	await fn('fixtures/icon.svg', {platform: 'android', dest: t.context.tmp, orientation: 'portrait', draw9patch: false});
+	await fn('test/fixtures/icon.svg', {platform: 'android', dest: t.context.tmp, orientation: 'portrait', draw9patch: false});
 
 	notExists(t, 'drawable-ldpi-port/splash.9.png');
 	exists(t, 'drawable-ldpi-port/splash.png');

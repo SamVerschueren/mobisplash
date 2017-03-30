@@ -5,6 +5,7 @@ const gm = require('gm');
 const mkdir = require('mkdirp');
 const utils = require('./lib/utils');
 const platforms = require('./platforms.json');
+
 const mkdirp = pify(mkdir);
 
 module.exports = (file, opts) => {
@@ -42,9 +43,11 @@ module.exports = (file, opts) => {
 
 			return Promise.all(screens.map(screen => {
 				const dest = path.join(opts.dest, screen.name);
-				const dimension = utils.calculateDimension(size, screen, opts, resizeFn);
+				const dimension = utils.calculateDimension(size, screen, opts);
 
-				const image = gm(file)[resizeFn](dimension.width, dimension.height)
+				const resizeDimension = resizeFn === 'density' ? dimension.dpi : dimension.px;
+
+				const image = gm(file)[resizeFn](resizeDimension.width, resizeDimension.height)
 					.gravity('Center')
 					.background(opts.background)
 					.extent(screen.width, screen.height);
