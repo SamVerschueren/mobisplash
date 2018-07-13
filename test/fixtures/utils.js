@@ -5,7 +5,7 @@ const gm = require('gm');
 const pify = require('pify');
 
 const size = filePath => {
-	var image = gm(filePath);
+	const image = gm(filePath);
 	return pify(image.size.bind(image))();
 };
 

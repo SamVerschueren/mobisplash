@@ -39,7 +39,7 @@ module.exports = (file, opts) => {
 
 	return pify(img.identify.bind(img))()
 		.then(identity => {
-			const size = identity.size;
+			const {size} = identity;
 
 			return Promise.all(screens.map(screen => {
 				const dest = path.join(opts.dest, screen.name);
