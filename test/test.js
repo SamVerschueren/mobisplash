@@ -38,7 +38,8 @@ test('ios', async t => {
 	const landscape = [
 		'Default-Landscape-736h.png',
 		'Default-Landscape~ipad.png',
-		'Default-Landscape@2x~ipad.png'
+		'Default-Landscape@2x~ipad.png',
+		'Default-Landscape@~ipadpro.png'
 	];
 
 	const portrait = [
@@ -48,7 +49,12 @@ test('ios', async t => {
 		'Default~iphone.png',
 		'Default@2x~iphone.png',
 		'Default-Portrait~ipad.png',
-		'Default-Portrait@2x~ipad.png'
+		'Default-Portrait@2x~ipad.png',
+		'Default-Portrait@~ipadpro.png'
+	];
+
+	const square = [
+		'Default@2x~universal~anyany.png'
 	];
 
 	await m('test/fixtures/icon.png', {platform: 'ios', dest: t.context.tmp});
@@ -56,6 +62,7 @@ test('ios', async t => {
 	exists(t, [].concat(landscape, portrait));
 	await isLandscape(t, landscape);
 	await isPortrait(t, portrait);
+	await isSquare(t, square);
 });
 
 test('bb10', async t => {
